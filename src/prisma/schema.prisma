@@ -1,6 +1,6 @@
 datasource db {
     provider = "mongodb"
-    url = "mongodb+srv://test:xYa5TgxDqMHD5ixF@cluster0.55malts.mongodb.net/"
+    url = "mongodb+srv://test:xYa5TgxDqMHD5ixF@cluster0.55malts.mongodb.net/Cluster0"
 }
 
 generator client{
