@@ -1,7 +1,8 @@
 datasource db {
     provider = "mongodb"
-    url = process.env.DATABASE_URL
+    url = "mongodb+srv://test:xYa5TgxDqMHD5ixF@cluster0.55malts.mongodb.net/"
 }
+
 
 generator client{
     provider = "prisma-client-js"
