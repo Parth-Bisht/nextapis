@@ -3,15 +3,14 @@ datasource db {
     url = "mongodb+srv://test:xYa5TgxDqMHD5ixF@cluster0.55malts.mongodb.net/"
 }
 
-
 generator client{
     provider = "prisma-client-js"
     previewFeatures = ["mongoDb"]
 }
 
 model User {
-    id String @id @default(dbgenerated()) @Map("_id") @db.ObjectId
-    email String unique
+    id String @id @default(auto()) @map("_id") @db.ObjectId
+    email String @unique
     name String
     password String
     createdAt DateTime @default(now())
